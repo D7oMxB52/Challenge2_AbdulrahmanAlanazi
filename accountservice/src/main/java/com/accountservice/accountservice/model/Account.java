@@ -30,6 +30,13 @@ public class Account {
     public Account() {
     }
 
+    public Account(Integer id, AccountTypes accountTypes,
+                   String accountNumber,
+                   String accountName,
+                   String Balance,
+                   Date date) {
+    }
+
     public Integer getId() {
         return id;
     }
