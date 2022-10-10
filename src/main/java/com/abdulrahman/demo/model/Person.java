@@ -11,6 +11,7 @@ import javax.persistence.Table;
 public class Person {
 
     @Id
+    @Column
     private Integer id;
     @Column
     private String name;
