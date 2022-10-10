@@ -22,7 +22,7 @@ public class AccountService {
     }
 
     // GET ALL ACCOUNTS IN DATABASE
-    public List<Account> getPeople() {
+    public List<Account> getAccount() {
         return accountDao.findAll();
     }
 
@@ -39,7 +39,7 @@ public class AccountService {
     }
 
     // UPDATE ACCOUNT
-    public Account updatePerson(Integer id, Account account){
+    public Account updateAccount(Integer id, Account account){
         Account existedAccount = accountDao.findById(id).get();
         existedAccount.setAccountName(account.getAccountName());
         existedAccount.setAccountTypes(account.getAccountTypes());

@@ -1,9 +1,6 @@
 package com.abdulrahman.demo.model;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
 import java.util.Date;
 
 
@@ -15,6 +12,7 @@ public class Account {
     @Column
     private Integer id;
 
+    @Enumerated(EnumType.STRING)
     @Column(name = "account_type")
     private AccountTypes accountTypes;
 
