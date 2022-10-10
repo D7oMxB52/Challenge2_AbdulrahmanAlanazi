@@ -31,6 +31,12 @@ public class Person {
     public Person() {
     }
 
+    public Person(Integer id,String name,
+                  String address, String postcode
+                 ,String age, String job,String email
+                 ,String phoneno) {
+    }
+
     public Integer getId() {
         return id;
     }
