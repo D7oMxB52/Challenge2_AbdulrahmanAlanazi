@@ -2,12 +2,12 @@ package com.abdulrahman.demo.model;
 
 
 public enum AccountTypes {
-    TermInv("Term Investment"),
+    Term_Investment("Term Investment"),
     Loan("Loan"),
     Saving("Saving");
 
-    public final String s;
-    private AccountTypes(String s) {
+    public String s;
+    AccountTypes(String s) {
         this.s = s;
     }
 }
