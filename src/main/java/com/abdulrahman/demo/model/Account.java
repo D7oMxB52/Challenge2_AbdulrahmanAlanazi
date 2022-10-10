@@ -15,9 +15,11 @@ public class Account {
     @Column
     private Integer id;
 
-    @Column(name = "account type")
+    @Column(name = "account_type")
     private AccountTypes accountTypes;
 
+    @Column
+    private String accountNumber;
     @Column
     private String accountName;
 
@@ -68,5 +70,13 @@ public class Account {
 
     public void setDate(Date date) {
         this.date = date;
+    }
+
+    public String getAccountNumber() {
+        return accountNumber;
+    }
+
+    public void setAccountNumber(String accountNumber) {
+        this.accountNumber = accountNumber;
     }
 }
