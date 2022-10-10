@@ -1,4 +1,4 @@
-package com.abdulrahman.demo;
+package com.abdulrahman.demo.dao;
 
 import com.abdulrahman.demo.model.Person;
 import org.springframework.data.jpa.repository.JpaRepository;
