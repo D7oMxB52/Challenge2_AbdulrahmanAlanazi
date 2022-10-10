@@ -67,7 +67,7 @@ public class PersonControllerTest {
     @Test
     void shouldGiveBadRequest() throws Exception{
         this.mockMvc
-                .perform(MockMvcRequestBuilders.get("/wrong").contentType(MediaType.APPLICATION_JSON)
+                .perform(MockMvcRequestBuilders.get("/wrong")
                 )
                 .andExpect(MockMvcResultMatchers.status().isNotFound());
     }
