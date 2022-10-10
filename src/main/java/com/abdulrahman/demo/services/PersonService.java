@@ -32,8 +32,9 @@ public class PersonService {
     }
 
     // DELETE PERSON
-    public void deletePerson(Integer id){
-        personDao.deleteById(id);
+    public void deletePerson(Person person){
+        Integer id = person.getId();
+        personDao.deleteById(person.getId());
         System.out.println("Person with ID: "+
                            id+" has been deleted.");
     }
